@@ -1,7 +1,7 @@
 console.log('JS OK')
-const elementCol = document.getElementById('col');
+const elementRow = document.getElementById('row');
 
-// creo l array di oggetti
+// creo l array di oggetti //! MILESTONE 0
 
 const info = [
     {
@@ -41,7 +41,30 @@ const info = [
     }
 ];
 
-// stampo in console 
-console.log("Nome: " + info[0].name)
-console.log("role: " + info[0].role)
-console.log("img: " + info[0].img)
+// stampo in console //! MILESTONE 1
+console.log("Nome: " + info[0].name);
+console.log("role: " + info[0].role);
+console.log("img: " + info[0].img);
+
+// STAMPO IN PAGINA //! MILESTONE 2
+
+let items = '';
+
+for(let i = 0; i < info.length; i++){
+    const currentPerson = info[i];
+
+items += `
+<div class="col" id="col">
+    <div class="card">
+        <img class="card-image" src="img/${currentPerson.img}" alt="Tizio">
+        <div class="card-info">
+            <h3 class="name">${currentPerson.name}</h3>
+            <h5 class="role">${currentPerson.role}</h5>
+        </div>
+    </div>
+</div>
+`
+
+};
+
+elementRow.innerHTML = items;
