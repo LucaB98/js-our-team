@@ -59,7 +59,7 @@ items += `
         <img class="card-image" src="img/${currentPerson.img}" alt="Tizio">
         <div class="card-info">
             <h3 class="name">${currentPerson.name}</h3>
-            <h5 class="role">${currentPerson.role}</h5>
+            <h3 class="role">${currentPerson.role}</h3>
         </div>
     </div>
 </div>
