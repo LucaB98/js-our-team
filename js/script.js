@@ -40,3 +40,8 @@ const info = [
 
     }
 ];
+
+// stampo in console 
+console.log("Nome: " + info[0].name)
+console.log("role: " + info[0].role)
+console.log("img: " + info[0].img)
