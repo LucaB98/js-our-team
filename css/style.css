@@ -1,16 +1,117 @@
-/*RESET*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-/*UTILS*/
-body{
-    font-family: 'Rubik Mono One', sans-serif;
+/* Generics */
+body {
+	font-family: Fredoka, sans-serif;
+    background-color: rgb(243, 243, 243);
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+ul {
+	list-style-type: none;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+#logo {
+	height: 50px;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+/* Utils */
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+
+
+.header-left {
+	gap: 16px;
+	display: flex;
+	align-items: center;
+}
+
+
+.col{
+    width: calc(100% /3);
+}
+/* # Card */
+
+.card {
+	width: 100%;
+	color: #fff;
+	display: flex;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+.card-image {
+	height: 100%;
+    width: 100%;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+	padding: 10px;
+    color: black;
+}
+
+.name {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.role {
+	font-size: 14px;
+}
+
+.email {
+	color: lightblue;
+	text-decoration: none;
+}
+
+/* # Esempio space-between */
+
+/* .row.space-between {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.space-between .card {
+	flex-basis: 300px;
+	flex-shrink: 0;
+} */
+
+/* # Esempio padding */
+.row.padding {
+	display: flex;
+	margin: 0 -1rem;
+	flex-wrap: wrap;
+}
+.padding .col {
+	padding: 1rem;
+	flex-basis: calc(100% / 3);
 }
